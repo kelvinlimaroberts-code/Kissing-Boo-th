@@ -336,10 +336,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5176c9ae3d7205846b6ddcd6d0ec6d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TinderDeSCRIPTion
-  textDisplay: {fileID: 0}
-  monsterName: []
-  monsterAge: 
-  monsterDescription: []
+  textDisplay: {fileID: 763364092}
+  monsterName:
+  - monstersr
+  - 
+  - 
+  - 
+  - 
+  - 
+  monsterAge: 000000000000000000000000000000000000000000000000
+  monsterDescription:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
