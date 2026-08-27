@@ -8,6 +8,8 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private SeatedCameraRig cameraRig;
     [SerializeField] private PhoneCheck phoneCheck;
     [SerializeField] private Transform[] seatPositions;
+    [SerializeField] private Transform[] monsterSpots;
+    [SerializeField] private MonsterVisualDisplay monsterVisual;
 
     private List<MonsterData> selectedDates;
     private MonsterData imposter;
@@ -31,6 +33,8 @@ public class RoundManager : MonoBehaviour
         MonsterData monster = selectedDates[index];
         bool isImposter = monster == imposter;
         cameraRig.MoveToSeat(seatPositions[index]);
+        monsterVisual.transform.position = monsterSpots[index].position;
+        monsterVisual.SetMonster(monster);
         phoneCheck.CurrentDate = monster;
         DialogueManager.Instance.StartDate(monster, isImposter);
     }

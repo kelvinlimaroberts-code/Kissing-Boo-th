@@ -14,7 +14,7 @@ public class PhoneCheck : MonoBehaviour
     private void Update()
     {
         phoneUI.SetActive(IsPhoneOut);
-        if (IsPhoneOut)
+        if (IsPhoneOut && CurrentDate != null)
         {
             card.Show(CurrentDate);
         }
