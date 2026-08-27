@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.AdaptivePerformance.Provider;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
 
     [SerializeField] private SpeechBubble bubble;
+    [SerializeField] private ResponseMenuUI responseMenu;
 
     private Dialogue[] activeLines;
     private int lineIndex;
@@ -30,7 +30,16 @@ public class DialogueManager : MonoBehaviour
 
     private void ShowCurrentLine()
     {
-        bubble.Show(activeLines[lineIndex].text);
+        Dialogue line = activeLines[lineIndex];
+        bubble.Show(line.text);
+
+        if (line.responses != null && line.responses.Length > 0)
+        {
+            responseMenu.Show(line);
+        }
+        else
+        {
+            responseMenu.Hide();
+        }
     }
 }
-

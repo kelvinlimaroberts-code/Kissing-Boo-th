@@ -9,6 +9,7 @@ public class ResponseMenuUI : MonoBehaviour
 
     public void Show(Dialogue line)
     {
+        Debug.Log("Show called, responses: " + line.responses.Length);
         gameObject.SetActive(true);
         for (int i = 0; i < buttons.Length; i++)
         {
@@ -23,7 +24,21 @@ public class ResponseMenuUI : MonoBehaviour
             }
         }
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1)) TryPress(0);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) TryPress(1);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) TryPress(2);
+        if (Input.GetKeyDown(KeyCode.Alpha4)) TryPress(3);
+    }
 
+    private void TryPress(int index)
+    {
+        if (index < buttons.Length && buttons[index].gameObject.activeSelf)
+        {
+            buttons[index].onClick.Invoke();
+        }
+    }
     public void Hide()
     {
         gameObject.SetActive(false);
