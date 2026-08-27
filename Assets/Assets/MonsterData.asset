@@ -12,16 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed578f32027040438386761b7396a3d, type: 3}
   m_Name: MonsterData
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
-  monsterName: Terrence
-  normalVisual: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  imposterVisual: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  monsterName: jackohty
+  normalVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
+  imposterVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
   normalDialogue:
-  - text: HI
-    responses: []
+  - text: 'bumboclart
+
+'
+    responses:
+    - text: hello
+      tone: 
+      nextLine: 1
     isTell: 0
   imposterDialogue:
   - text: Hi (Evil)
-    responses: []
+    responses:
+    - text: 'hello '
+      tone: 
+      nextLine: 1
+    - text: '*kills you*'
+      tone: 
+      nextLine: 1
+    - text: '*leans in for a kiss*'
+      tone: 
+      nextLine: 0
+    - text: So... the weather eh?
+      tone: 
+      nextLine: 0
+    isTell: 0
+  - text: how are you? Im just up to some, monkey business AHHAHH
+    responses:
+    - text: well im feeling pretty funky
+      tone: 
+      nextLine: 2
+    - text: h
+      tone: 
+      nextLine: 0
+    - text: b
+      tone: 
+      nextLine: 1
+    - text: c
+      tone: 
+      nextLine: 0
+    isTell: 0
+  - text: Line 3
+    responses:
+    - text: well im feeling pretty funky
+      tone: 
+      nextLine: 0
+    - text: '*kills you*'
+      tone: 
+      nextLine: 0
+    - text: '*leans in for a kiss*'
+      tone: 
+      nextLine: 0
+    - text: So... the weather eh?
+      tone: 
+      nextLine: 0
     isTell: 0
   likes: Being nice
   dislikes: Being evil
