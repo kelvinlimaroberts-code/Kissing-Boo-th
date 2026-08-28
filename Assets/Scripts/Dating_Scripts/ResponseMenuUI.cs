@@ -9,7 +9,6 @@ public class ResponseMenuUI : MonoBehaviour
 
     public void Show(Dialogue line)
     {
-        Debug.Log("Show called, responses: " + line.responses.Length);
         gameObject.SetActive(true);
         for (int i = 0; i < buttons.Length; i++)
         {
@@ -17,7 +16,10 @@ public class ResponseMenuUI : MonoBehaviour
             buttons[i].gameObject.SetActive(hasResponse);
             if (hasResponse)
             {
-                buttonLabels[i].text = line.responses[i].text;
+                PlayerResponse r = line.responses[i];
+                buttonLabels[i].text = r.text;
+                bool locked = r.requiresCharge && !ChargeManager.Instance.HasCharge;
+                buttons[i].interactable = !locked;
                 int captured = i;
                 buttons[i].onClick.RemoveAllListeners();
                 buttons[i].onClick.AddListener(() => DialogueManager.Instance.PickResponse(captured));

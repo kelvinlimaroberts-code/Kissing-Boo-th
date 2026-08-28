@@ -25,7 +25,12 @@ public class DialogueManager : MonoBehaviour
 
     public void PickResponse(int responseIndex)
     {
-        lineIndex = activeLines[lineIndex].responses[responseIndex].nextLine;
+        PlayerResponse response = activeLines[lineIndex].responses[responseIndex];
+        if (response.requiresCharge && !ChargeManager.Instance.TrySpendCharge())
+        {
+            return; // safety guard
+        }
+        lineIndex = response.nextLine;
         ShowCurrentLine();
     }
 
