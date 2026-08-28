@@ -14,11 +14,16 @@ public class TinderDeSCRIPTion : MonoBehaviour
     public string[] monsterDescription;
     public bool swiping = true;
 
-    [Header("other")]
+    [Header("camera")]
+    private Vector2 mousePosition = new Vector2(0, 0);
     public Camera mainCam;
     public Transform startTransform;
     public Transform dateTransform;
     public event Action StartDate;
+
+    [Header("buttons")]
+    [SerializeField] private GameObject redButton;
+    [SerializeField] private GameObject greenButton;
 
 
 
@@ -29,36 +34,13 @@ public class TinderDeSCRIPTion : MonoBehaviour
         changeCamTransform(startTransform);
     }
 
-    void Update()
-    {
-        if(swiping)
-        {
-            Vector3 mousePosition = Input.mousePosition;
-            Ray pointerRay = mainCam.ScreenPointToRay(mousePosition);
-            RaycastHit hit;
-            if(Physics.Raycast(pointerRay, out hit))
-            {
-                if(hit.transform.name == "Red Button")
-                {
-                    redButtonPressed();
-                }
-                else if (hit.transform.name == "Green Button")
-                {
-                    greenButtonPressed();
-                }
-            }
-
-        }
-    }
-
     void displayInformation()
     {
         textDisplay.text = ("Name: " + monsterName[monsterIndex] + "\n" + "Age: " + monsterAge[monsterIndex] + "\n" + "Desc: " + monsterDescription[monsterIndex]);
     }
 
-    void redButtonPressed()
+    public void redButtonPressed()
     {
-        Debug.Log("red pressed");
         monsterIndex++;
         if (monsterIndex >= totalMonsters)
         {
@@ -71,9 +53,10 @@ public class TinderDeSCRIPTion : MonoBehaviour
         }
     }
 
-    void greenButtonPressed()
+    public void greenButtonPressed()
     {
         swiping = false;
+        toggleButtonDisplay();
         changeCamTransform(dateTransform);
         StartDate?.Invoke();
     }
@@ -82,5 +65,11 @@ public class TinderDeSCRIPTion : MonoBehaviour
     {
         mainCam.transform.position = Tran.position;
         mainCam.transform.rotation = Tran.rotation;
+    }
+
+    void toggleButtonDisplay()
+    {
+        redButton.SetActive(swiping);
+        greenButton.SetActive(swiping);
     }
 }
