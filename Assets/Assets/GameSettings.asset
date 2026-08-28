@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb2475832c0f3a40bb0351227db49db, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: Assembly-CSharp::GameSettings
-  monstersPerRun: 6
+  monstersPerRun: 3
   dateTimerSeconds: 10

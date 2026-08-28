@@ -10,22 +10,15 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private Transform[] seatPositions;
     [SerializeField] private Transform[] monsterSpots;
     [SerializeField] private MonsterVisualDisplay monsterVisual;
+    [SerializeField] private VoteScreen voteScreen;
 
     private List<MonsterData> selectedDates;
     private MonsterData imposter;
     private int index;
+    private int day;
     private float timer;
     private bool roundActive;
 
-
-    public void StartRound(List<MonsterData> picks)
-    {
-        selectedDates = picks;
-        imposter = selectedDates[Random.Range(0, selectedDates.Count)];
-        index = 0;
-        roundActive = true;
-        BeginDate();
-    }
 
     private void BeginDate()
     {
@@ -38,17 +31,17 @@ public class RoundManager : MonoBehaviour
         phoneCheck.CurrentDate = monster;
         DialogueManager.Instance.StartDate(monster, isImposter);
     }
-
-    private void Update()
+    public void StartRound(List<MonsterData> picks)
     {
-        if (!roundActive) return;
-
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
-        {
-            NextDate();
-        }
+        selectedDates = picks;
+        imposter = selectedDates[Random.Range(0, selectedDates.Count)];
+        index = 0;
+        day = 0;
+        roundActive = true;
+        BeginDate();
     }
+
+    // BeginDate() stays exactly as it is
 
     private void NextDate()
     {
@@ -59,13 +52,28 @@ public class RoundManager : MonoBehaviour
         }
         else
         {
+            NextDay();
+        }
+    }
+
+    private void NextDay()
+    {
+        day++;
+        if (day < 3)
+        {
+            index = 0;
+            BeginDate();
+        }
+        else
+        {
             EndRound();
         }
     }
 
     private void EndRound()
     {
-        // Reveal goes here (good or bad ending)
+        roundActive = false;
+        voteScreen.Show(selectedDates, imposter);
     }
 }
 
