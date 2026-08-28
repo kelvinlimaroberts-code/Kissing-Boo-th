@@ -5,9 +5,12 @@ using UnityEngine.InputSystem;
 
 public class TinderDeSCRIPTion : MonoBehaviour
 {
+    [Header("game objects")]
     public TMP_Text textDisplay;
     public GameObject ImageDisplayer;
     private SpriteRenderer _spriteDisplayer;
+    public SoundManager soundManager;
+
     [Header("monster info")]
     public int monsterIndex { get; private set; } = 0;
     public int totalMonsters = 6;
@@ -27,6 +30,8 @@ public class TinderDeSCRIPTion : MonoBehaviour
     [Header("buttons")]
     [SerializeField] private GameObject redButton;
     [SerializeField] private GameObject greenButton;
+
+
 
 
     void Awake()
@@ -65,6 +70,7 @@ public class TinderDeSCRIPTion : MonoBehaviour
         swiping = false;
         toggleButtonDisplay();
         changeCamTransform(dateTransform);
+        soundManager.PlayMusic(0);
         StartDate?.Invoke();
     }
 
@@ -78,5 +84,14 @@ public class TinderDeSCRIPTion : MonoBehaviour
     {
         redButton.SetActive(swiping);
         greenButton.SetActive(swiping);
+    }
+
+    public void StartSwiping()
+    {
+        soundManager.StopMusic();
+        swiping = true;
+        toggleButtonDisplay();
+        changeCamTransform(startTransform);
+
     }
 }
