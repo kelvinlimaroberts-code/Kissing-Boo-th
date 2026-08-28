@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TinderDeSCRIPTion
   textDisplay: {fileID: 4204898822905000080}
+  ImageDisplayer: {fileID: 8149261667704439001}
   totalMonsters: 6
   monsterName:
   - monstersr
@@ -63,10 +64,19 @@ MonoBehaviour:
   - how ya doin
   - how are you
   - how have you been
+  monsterPFP:
+  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   swiping: 1
   mainCam: {fileID: 0}
-  startPos: {fileID: 3204016228282008415}
-  datePos: {fileID: 0}
+  startTransform: {fileID: 0}
+  dateTransform: {fileID: 0}
+  redButton: {fileID: 0}
+  greenButton: {fileID: 0}
 --- !u!1001 &7302531337780189920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193,11 +203,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8640398372210389236, guid: 5fc9248421ea5cf499520f4086a035d7, type: 3}
   m_PrefabInstance: {fileID: 8230928218170169431}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3204016228282008415 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6795037188809792264, guid: 5fc9248421ea5cf499520f4086a035d7, type: 3}
-  m_PrefabInstance: {fileID: 8230928218170169431}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4204898822905000080 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5215428581377730759, guid: 5fc9248421ea5cf499520f4086a035d7, type: 3}
@@ -209,3 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
+--- !u!1 &8149261667704439001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 229085264184514702, guid: 5fc9248421ea5cf499520f4086a035d7, type: 3}
+  m_PrefabInstance: {fileID: 8230928218170169431}
+  m_PrefabAsset: {fileID: 0}

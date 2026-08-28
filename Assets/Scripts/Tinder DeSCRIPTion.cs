@@ -6,12 +6,15 @@ using UnityEngine.InputSystem;
 public class TinderDeSCRIPTion : MonoBehaviour
 {
     public TMP_Text textDisplay;
+    public GameObject ImageDisplayer;
+    private SpriteRenderer _spriteDisplayer;
     [Header("monster info")]
     public int monsterIndex { get; private set; } = 0;
     public int totalMonsters = 6;
     public string[] monsterName;
     public int[] monsterAge;
     public string[] monsterDescription;
+    public Sprite[] monsterPFP;
     public bool swiping = true;
 
     [Header("camera")]
@@ -26,7 +29,10 @@ public class TinderDeSCRIPTion : MonoBehaviour
     [SerializeField] private GameObject greenButton;
 
 
-
+    void Awake()
+    {
+        _spriteDisplayer = ImageDisplayer.GetComponent<SpriteRenderer>();
+    }
 
     void Start()
     {
@@ -36,6 +42,7 @@ public class TinderDeSCRIPTion : MonoBehaviour
 
     void displayInformation()
     {
+        _spriteDisplayer.sprite = monsterPFP[monsterIndex];
         textDisplay.text = ("Name: " + monsterName[monsterIndex] + "\n" + "Age: " + monsterAge[monsterIndex] + "\n" + "Desc: " + monsterDescription[monsterIndex]);
     }
 
