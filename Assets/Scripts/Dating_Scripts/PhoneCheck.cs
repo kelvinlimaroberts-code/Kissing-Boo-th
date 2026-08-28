@@ -9,7 +9,7 @@ public class PhoneCheck : MonoBehaviour
 
     public MonsterData CurrentDate { get; set; }
 
-    public bool IsPhoneOut => cam.CurrentPitch >= lookDownThreshold;
+    public bool IsPhoneOut => Input.GetKey(KeyCode.Space) && cam.CurrentPitch >= lookDownThreshold;
 
     private void Update()
     {

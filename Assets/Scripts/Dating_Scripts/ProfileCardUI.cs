@@ -5,6 +5,7 @@ using TMPro;
 public class ProfileCardUI : MonoBehaviour
 {
     [SerializeField] private Image photo;
+    [SerializeField] private Image phone_image;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text likesText;
     [SerializeField] private TMP_Text dislikesText;

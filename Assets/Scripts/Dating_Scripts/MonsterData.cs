@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using TMPro;
 [CreateAssetMenu(menuName = "MonsterData")]
 public class MonsterData : ScriptableObject
 {

@@ -6,6 +6,7 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private SpeechBubble bubble;
     [SerializeField] private ResponseMenuUI responseMenu;
+    [SerializeField] private MonsterVisualDisplay monsterVisual;
 
     private Dialogue[] activeLines;
     private int lineIndex;
@@ -32,6 +33,7 @@ public class DialogueManager : MonoBehaviour
     {
         Dialogue line = activeLines[lineIndex];
         bubble.Show(line.text);
+        monsterVisual.SetTell(line.isTell);
 
         if (line.responses != null && line.responses.Length > 0)
         {
