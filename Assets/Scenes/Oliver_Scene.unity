@@ -17462,6 +17462,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1977967560}
     - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 11400000, guid: e25e9787f5658874e860c233d7de1a01, type: 2}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
       propertyPath: redButton
       value: 
       objectReference: {fileID: 408805807}
@@ -17469,6 +17473,10 @@ PrefabInstance:
       propertyPath: greenButton
       value: 
       objectReference: {fileID: 35908281}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: roundManager
+      value: 
+      objectReference: {fileID: 2093800815}
     - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
       propertyPath: soundManager
       value: 
@@ -17481,6 +17489,34 @@ PrefabInstance:
       propertyPath: startTransform
       value: 
       objectReference: {fileID: 1456016767}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: roster.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: 'roster.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c3118bc1c474904f934b939c1684d8f, type: 2}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: 'roster.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fdb28d0472fdd44786a70b546f37352, type: 2}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: 'roster.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: bb8ad014ba13bcc4c86022ab92262695, type: 2}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: 'roster.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c27123b1cd3bd24e926a7a9ffbc1e2a, type: 2}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: 'roster.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 78c84c098fa04da43904fca1d5d38a36, type: 2}
+    - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
+      propertyPath: 'roster.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5909209b9bd1b4d4ab097f967d638779, type: 2}
     - target: {fileID: 3478831981013656482, guid: 6cffe18a5d752474795e0bc3163237c9, type: 3}
       propertyPath: monsterSelectButton.Array.size
       value: 6

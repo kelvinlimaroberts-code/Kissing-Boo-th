@@ -10,15 +10,17 @@ public class DialogueManager : MonoBehaviour
 
     private Dialogue[] activeLines;
     private int lineIndex;
+    private bool isImposter;
 
     private void Awake()
     {
         Instance = this;
     }
 
-    public void StartDate(MonsterData monster, bool isImposter)
+    public void StartDate(MonsterData monster, bool imposter)
     {
-        activeLines = isImposter ? monster.imposterDialogue : monster.normalDialogue;
+        activeLines = monster.dialogue;
+        isImposter = imposter;
         lineIndex = 0;
         ShowCurrentLine();
     }
@@ -26,11 +28,16 @@ public class DialogueManager : MonoBehaviour
     public void PickResponse(int responseIndex)
     {
         PlayerResponse response = activeLines[lineIndex].responses[responseIndex];
+
         if (response.requiresCharge && !ChargeManager.Instance.TrySpendCharge())
         {
-            return; // safety guard
+            return;
         }
-        lineIndex = response.nextLine;
+
+        lineIndex = (isImposter && response.imposterNextLine >= 0)
+            ? response.imposterNextLine
+            : response.nextLine;
+
         ShowCurrentLine();
     }
 

@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
-using System;
-using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class TinderDeSCRIPTion : MonoBehaviour
 {
@@ -12,23 +11,21 @@ public class TinderDeSCRIPTion : MonoBehaviour
     public SoundManager soundManager;
 
     [Header("monster info")]
-    public int monsterIndex { get; private set; } = 0;
-    public int totalMonsters = 6;
-    public string[] monsterName;
-    public int[] monsterAge;
-    public string[] monsterDescription;
-    public PickButton[] monsterSelectButton;
-    public Sprite[] monsterPFP;
-    public bool swiping = true;
+    public List<MonsterData> roster;
+    private int monsterIndex = 0;
 
+    [Header("selection")]
+    public GameSettings settings;
+    private List<MonsterData> selected = new List<MonsterData>();
 
     [Header("buttons")]
     [SerializeField] private GameObject redButton;
     [SerializeField] private GameObject greenButton;
-    private int[] selectedMstrID = new int[3];
-    private int ChoiceCounter = 0;
 
+    [Header("hookup")]
+    public RoundManager roundManager;
 
+    public bool swiping = true;
 
     void Awake()
     {
@@ -42,36 +39,41 @@ public class TinderDeSCRIPTion : MonoBehaviour
 
     void displayInformation()
     {
-        _spriteDisplayer.sprite = monsterPFP[monsterIndex];
-        textDisplay.text = ("Name: " + monsterName[monsterIndex] + "\n" + "Age: " + monsterAge[monsterIndex] + "\n" + "Desc: " + monsterDescription[monsterIndex]);
+        MonsterData m = roster[monsterIndex];
+        _spriteDisplayer.sprite = m.normalVisual;
+        textDisplay.text = "Name: " + m.monsterName + "\nDesc: " + m.lookDescription;
     }
 
     public void redButtonPressed()
     {
         monsterIndex++;
-        if (monsterIndex >= totalMonsters)
+        if (monsterIndex >= roster.Count)
         {
             monsterIndex = 0;
-            displayInformation();
         }
-        else
-        {
-            displayInformation();
-        }
+        displayInformation();
     }
 
     public void greenButtonPressed()
     {
-        if (ChoiceCounter < 3)  //only do if 3 choices havnt been made already
+        MonsterData current = roster[monsterIndex];
+
+        if (selected.Contains(current))
         {
-            selectedMstrID[ChoiceCounter] = monsterIndex;
-            ChoiceCounter++;
-            monsterSelectButton[monsterIndex].Pick();
-            redButtonPressed(); //just used to skip to next monster
+            selected.Remove(current);
+        }
+        else if (selected.Count < settings.monstersPerRun)
+        {
+            selected.Add(current);
+        }
+
+        if (selected.Count >= settings.monstersPerRun)
+        {
+            startDate();
         }
         else
         {
-            startDate();
+            redButtonPressed();
         }
     }
 
@@ -80,8 +82,8 @@ public class TinderDeSCRIPTion : MonoBehaviour
         swiping = false;
         toggleButtonDisplay();
         soundManager.PlayMusic(0);
+        roundManager.StartRound(selected);
     }
-
 
     void toggleButtonDisplay()
     {
@@ -94,6 +96,5 @@ public class TinderDeSCRIPTion : MonoBehaviour
         soundManager.StopMusic();
         swiping = true;
         toggleButtonDisplay();
-
     }
 }

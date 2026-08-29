@@ -1,12 +1,12 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class ChargeManager : MonoBehaviour
 {
     public static ChargeManager Instance { get; private set; }
 
     [SerializeField] private GameSettings settings;
-    [SerializeField] private TMP_Text chargeText;
+    [SerializeField] private Image[] chargeIcons;
 
     public int Charges { get; private set; }
     public bool HasCharge => Charges > 0;
@@ -19,19 +19,22 @@ public class ChargeManager : MonoBehaviour
     public void ResetCharges()
     {
         Charges = settings.chargesPerNight;
-        UpdateText();
+        UpdateIcons();
     }
 
     public bool TrySpendCharge()
     {
         if (Charges <= 0) return false;
         Charges--;
-        UpdateText();
+        UpdateIcons();
         return true;
     }
 
-    private void UpdateText()
+    private void UpdateIcons()
     {
-        if (chargeText != null) chargeText.text = "Charges: " + Charges;
+        for (int i = 0; i < chargeIcons.Length; i++)
+        {
+            chargeIcons[i].enabled = i < Charges;
+        }
     }
 }
