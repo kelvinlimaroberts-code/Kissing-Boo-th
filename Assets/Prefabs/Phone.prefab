@@ -373,6 +373,7 @@ GameObject:
   - component: {fileID: 474649573415958659}
   - component: {fileID: 7249021183233034666}
   - component: {fileID: 6063872686514432076}
+  - component: {fileID: 2737166144132368018}
   m_Layer: 0
   m_Name: Phone
   m_TagString: Untagged
@@ -455,6 +456,19 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2737166144132368018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6103078941702823698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c12436cb6c2f248a9dc5def3f1c1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowPosition
+  Leader: {fileID: 0}
 --- !u!1 &6686578605276541006
 GameObject:
   m_ObjectHideFlags: 0

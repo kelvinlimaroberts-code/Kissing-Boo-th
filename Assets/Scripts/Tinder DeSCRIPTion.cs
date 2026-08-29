@@ -17,20 +17,16 @@ public class TinderDeSCRIPTion : MonoBehaviour
     public string[] monsterName;
     public int[] monsterAge;
     public string[] monsterDescription;
+    public PickButton[] monsterSelectButton;
     public Sprite[] monsterPFP;
     public bool swiping = true;
 
-    [Header("camera")]
-    private Vector2 mousePosition = new Vector2(0, 0);
-    public Camera mainCam;
-    public Transform startTransform;
-    public Transform dateTransform;
-    public event Action StartDate;
 
     [Header("buttons")]
     [SerializeField] private GameObject redButton;
     [SerializeField] private GameObject greenButton;
-
+    private int[] selectedMstrID = new int[3];
+    private int ChoiceCounter = 0;
 
 
 
@@ -42,7 +38,6 @@ public class TinderDeSCRIPTion : MonoBehaviour
     void Start()
     {
         displayInformation();
-        changeCamTransform(startTransform);
     }
 
     void displayInformation()
@@ -67,18 +62,26 @@ public class TinderDeSCRIPTion : MonoBehaviour
 
     public void greenButtonPressed()
     {
-        swiping = false;
-        toggleButtonDisplay();
-        changeCamTransform(dateTransform);
-        soundManager.PlayMusic(0);
-        StartDate?.Invoke();
+        if (ChoiceCounter < 3)  //only do if 3 choices havnt been made already
+        {
+            selectedMstrID[ChoiceCounter] = monsterIndex;
+            ChoiceCounter++;
+            monsterSelectButton[monsterIndex].Pick();
+            redButtonPressed(); //just used to skip to next monster
+        }
+        else
+        {
+            startDate();
+        }
     }
 
-    void changeCamTransform(Transform Tran)
+    public void startDate()
     {
-        mainCam.transform.position = Tran.position;
-        mainCam.transform.rotation = Tran.rotation;
+        swiping = false;
+        toggleButtonDisplay();
+        soundManager.PlayMusic(0);
     }
+
 
     void toggleButtonDisplay()
     {
@@ -91,7 +94,6 @@ public class TinderDeSCRIPTion : MonoBehaviour
         soundManager.StopMusic();
         swiping = true;
         toggleButtonDisplay();
-        changeCamTransform(startTransform);
 
     }
 }
