@@ -37,35 +37,36 @@ public class SpeechBubble : MonoBehaviour
 
     private IEnumerator AnimatePop(int charIndex)
     {
+        TMP_TextInfo textInfo = bubbleText.textInfo;
+        TMP_CharacterInfo charInfo = textInfo.characterInfo[charIndex];
+        if (!charInfo.isVisible) yield break;
+
+        int matIndex = charInfo.materialReferenceIndex;
+        int vertIndex = charInfo.vertexIndex;
+        Vector3[] liveVerts = textInfo.meshInfo[matIndex].vertices;
+
+        // cache the TRUE full-size vertices once, before any scaling touches them
+        Vector3[] originalVerts = new Vector3[4];
+        for (int v = 0; v < 4; v++) originalVerts[v] = liveVerts[vertIndex + v];
+        Vector3 mid = (originalVerts[0] + originalVerts[2]) / 2f;
+
         float t = 0f;
         while (t < popDuration)
         {
             t += Time.deltaTime;
-            ApplyScale(charIndex, BounceEase(Mathf.Clamp01(t / popDuration)));
+            ApplyScale(matIndex, vertIndex, originalVerts, mid, BounceEase(Mathf.Clamp01(t / popDuration)));
             yield return null;
         }
-        ApplyScale(charIndex, 1f);
+        ApplyScale(matIndex, vertIndex, originalVerts, mid, 1f);
     }
 
-    private void ApplyScale(int charIndex, float scale)
+    private void ApplyScale(int matIndex, int vertIndex, Vector3[] originalVerts, Vector3 mid, float scale)
     {
-        TMP_TextInfo textInfo = bubbleText.textInfo;
-        if (charIndex >= textInfo.characterCount) return;
-
-        TMP_CharacterInfo charInfo = textInfo.characterInfo[charIndex];
-        if (!charInfo.isVisible) return;
-
-        int matIndex = charInfo.materialReferenceIndex;
-        int vertIndex = charInfo.vertexIndex;
-        Vector3[] verts = textInfo.meshInfo[matIndex].vertices;
-        Vector3 mid = (verts[vertIndex] + verts[vertIndex + 2]) / 2f;
-
+        Vector3[] verts = bubbleText.textInfo.meshInfo[matIndex].vertices;
         for (int v = 0; v < 4; v++)
         {
-            Vector3 orig = verts[vertIndex + v];
-            verts[vertIndex + v] = mid + (orig - mid) * scale;
+            verts[vertIndex + v] = mid + (originalVerts[v] - mid) * scale;
         }
-
         bubbleText.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
     }
 

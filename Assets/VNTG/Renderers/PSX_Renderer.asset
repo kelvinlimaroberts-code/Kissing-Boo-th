@@ -95,4 +95,4 @@ MonoBehaviour:
   m_Name: PSXEffectFeature
   m_EditorClassIdentifier: PSXShader::PSXShader.PSXEffectFeature
   m_Active: 1
-  _renderEvent: 600
+  _renderEvent: 550
