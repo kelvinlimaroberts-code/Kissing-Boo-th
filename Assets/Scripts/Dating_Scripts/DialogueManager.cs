@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private SpeechBubble bubble;
     [SerializeField] private ResponseMenuUI responseMenu;
     [SerializeField] private MonsterVisualDisplay monsterVisual;
+    [SerializeField] private RoundManager roundManager;
 
     private Dialogue[] activeLines;
     private int lineIndex;
@@ -17,11 +18,11 @@ public class DialogueManager : MonoBehaviour
         Instance = this;
     }
 
-    public void StartDate(MonsterData monster, bool imposter)
+    public void StartDate(MonsterData monster, bool imposter, int day)
     {
         activeLines = monster.dialogue;
         isImposter = imposter;
-        lineIndex = 0;
+        lineIndex = monster.dayStartLine[day];
         ShowCurrentLine();
     }
 
@@ -45,7 +46,7 @@ public class DialogueManager : MonoBehaviour
     {
         Dialogue line = activeLines[lineIndex];
         bubble.Show(line.text);
-        monsterVisual.SetTell(line.isTell);
+        monsterVisual.UpdateMonsterSprite(line);
 
         if (line.responses != null && line.responses.Length > 0)
         {
@@ -54,6 +55,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             responseMenu.Hide();
+            roundManager.OnConversationEnded();
         }
     }
 }

@@ -13,6 +13,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private VoteScreen voteScreen;
     [SerializeField] private NightTransition nightTransition;
     [SerializeField] private ChargeManager chargeManager;
+    [SerializeField] private float wrapUpSeconds = 8f;
 
     private List<MonsterData> selectedDates;
     private MonsterData imposter;
@@ -48,7 +49,15 @@ public class RoundManager : MonoBehaviour
         monsterVisual.transform.position = monsterSpots[index].position;
         monsterVisual.SetMonster(monster);
         phoneCheck.CurrentDate = monster;
-        DialogueManager.Instance.StartDate(monster, isImposter);
+        DialogueManager.Instance.StartDate(monster, isImposter, day);
+    }
+
+    public void OnConversationEnded()
+    {
+        if (timer > wrapUpSeconds)
+        {
+            timer = wrapUpSeconds;
+        }
     }
 
     private void Update()

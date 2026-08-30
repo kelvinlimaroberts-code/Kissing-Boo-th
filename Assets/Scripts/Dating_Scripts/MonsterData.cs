@@ -8,6 +8,7 @@ public class MonsterData : ScriptableObject
     public Sprite imposterVisual;
     public Sprite currentEmotion;
     public Dialogue[] dialogue;
+    public int[] dayStartLine = new int[3];
     [TextArea] public string likes;
     [TextArea] public string dislikes;
     [TextArea] public string lookDescription;

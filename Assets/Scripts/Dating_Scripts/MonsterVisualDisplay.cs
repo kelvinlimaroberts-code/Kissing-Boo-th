@@ -11,13 +11,10 @@ public class MonsterVisualDisplay : MonoBehaviour
         spriteRenderer.sprite = data.normalVisual;
     }
 
-    public void SetTell(bool isTell)
+    public void UpdateMonsterSprite(Dialogue line)
     {
-        spriteRenderer.sprite = isTell ? currentData.imposterVisual : currentData.normalVisual;
-    }
-
-    public void UpdateMonsterSprite(MonsterData data)
-    {
-        spriteRenderer.sprite = data.currentEmotion;
+        spriteRenderer.sprite = line.currentEmotion != null
+            ? line.currentEmotion
+            : currentData.normalVisual;
     }
 }
