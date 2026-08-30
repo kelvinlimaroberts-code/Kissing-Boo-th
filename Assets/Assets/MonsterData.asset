@@ -100,17 +100,17 @@ MonoBehaviour:
       nextLine: 4
       imposterNextLine: 4
       requiresCharge: 0
-    - text: well im sure thats safe, at least you're not seriously hurt
+    - text: oh that sounds like fun!
       tone: 
       nextLine: 4
       imposterNextLine: 4
       requiresCharge: 0
-    - text: well im sure thats safe, at least you're not seriously hurt
+    - text: a brick wall huh?
       tone: 
       nextLine: 4
       imposterNextLine: 4
       requiresCharge: 0
-    - text: well im sure thats safe, at least you're not seriously hurt
+    - text: you're a stronger man then me that's for sure!
       tone: 
       nextLine: 4
       imposterNextLine: 4
@@ -119,30 +119,44 @@ MonoBehaviour:
     voiceLine: {fileID: 0}
     currentEmotion: {fileID: 0}
     responses: []
-  - text: IT SEEMS OUR TIME IS UP FOR TONIGHT, ILL SEE YOU TOMORROW
+  - text: Hello again! How are you?
+    voiceLine: {fileID: 0}
+    currentEmotion: {fileID: 0}
+    responses:
+    - text: 'excited for the food! '
+      tone: 
+      nextLine: 6
+      imposterNextLine: 7
+      requiresCharge: 1
+    - text: im alright what about you?
+      tone: 
+      nextLine: 6
+      imposterNextLine: 6
+      requiresCharge: 0
+    - text: im feeling hungry!
+      tone: 
+      nextLine: 6
+      imposterNextLine: 7
+      requiresCharge: 1
+  - text: oooh-wee yeah mee to i am starvingg i just hope its not ham...
     voiceLine: {fileID: 0}
     currentEmotion: {fileID: 0}
     responses:
     - text: 
       tone: 
       nextLine: 6
+      imposterNextLine: 7
+      requiresCharge: 1
+    - text: im alright what about you?
+      tone: 
+      nextLine: 6
       imposterNextLine: 6
       requiresCharge: 0
-    - text: 
+    - text: im feeling hungry!
       tone: 
-      nextLine: 0
-      imposterNextLine: 0
-      requiresCharge: 0
-    - text: 
-      tone: 
-      nextLine: 0
-      imposterNextLine: 0
-      requiresCharge: 0
-    - text: 
-      tone: 
-      nextLine: 0
-      imposterNextLine: 0
-      requiresCharge: 0
+      nextLine: 6
+      imposterNextLine: 7
+      requiresCharge: 1
   dayStartLine: 000000000500000000000000
   likes: Going fast, driving cars, getting drunk
   dislikes: brick walls, the colour green, ham
