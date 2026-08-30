@@ -5,5 +5,5 @@ public class Dialogue
 {
     [TextArea] public string text;
     public PlayerResponse[] responses;
-    public bool isTell;
+    public int visualIndex = -1;
 }

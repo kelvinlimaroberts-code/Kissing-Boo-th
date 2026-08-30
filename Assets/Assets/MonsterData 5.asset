@@ -14,62 +14,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
   monsterName: MSR6
   normalVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  imposterVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  normalDialogue:
-  - text: 'bumboclart
-
-'
+  reactionVisuals: []
+  dialogue:
+  - text: blahblhablahblhablahblhablahblhablahblhablahblha
     responses:
-    - text: hello
+    - text: blahblha
       tone: 
       nextLine: 1
-    isTell: 0
-  imposterDialogue:
-  - text: Hi (Evil)
-    responses:
-    - text: 'hello '
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: blahblha
       tone: 
       nextLine: 1
-    - text: '*kills you*'
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: blahblha
       tone: 
       nextLine: 1
-    - text: '*leans in for a kiss*'
-      tone: 
-      nextLine: 0
-    - text: So... the weather eh?
-      tone: 
-      nextLine: 0
-    isTell: 0
-  - text: how are you? Im just up to some, monkey business AHHAHH
-    responses:
-    - text: well im feeling pretty funky
-      tone: 
-      nextLine: 2
-    - text: h
-      tone: 
-      nextLine: 0
-    - text: b
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: blahblha
       tone: 
       nextLine: 1
-    - text: c
-      tone: 
-      nextLine: 0
-    isTell: 0
-  - text: Line 3
+      imposterNextLine: 0
+      requiresCharge: 0
+    visualIndex: -1
+  - text: blahblhablahblhablahblhablahblhablahblhablahblha
     responses:
-    - text: well im feeling pretty funky
+    - text: blahblha
       tone: 
-      nextLine: 0
-    - text: '*kills you*'
+      nextLine: 1
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: blahblha
       tone: 
-      nextLine: 0
-    - text: '*leans in for a kiss*'
+      nextLine: 1
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: blahblha
       tone: 
-      nextLine: 0
-    - text: So... the weather eh?
+      nextLine: 1
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: blahblha
       tone: 
-      nextLine: 0
-    isTell: 0
+      nextLine: 1
+      imposterNextLine: 0
+      requiresCharge: 0
+    visualIndex: -1
   likes: Being nice
   dislikes: Being evil
   lookDescription: nice (not evil)

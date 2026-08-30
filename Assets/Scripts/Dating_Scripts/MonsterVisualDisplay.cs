@@ -11,8 +11,9 @@ public class MonsterVisualDisplay : MonoBehaviour
         spriteRenderer.sprite = data.normalVisual;
     }
 
-    public void SetTell(bool isTell)
+    public void SetVisual(int index)
     {
-        spriteRenderer.sprite = isTell ? currentData.imposterVisual : currentData.normalVisual;
+        bool valid = index >= 0 && currentData.reactionVisuals != null && index < currentData.reactionVisuals.Length;
+        spriteRenderer.sprite = valid ? currentData.reactionVisuals[index] : currentData.normalVisual;
     }
 }

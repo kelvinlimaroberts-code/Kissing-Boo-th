@@ -12,77 +12,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed578f32027040438386761b7396a3d, type: 3}
   m_Name: MonsterData 1
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
-  monsterName: MST2
-  normalVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  imposterVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  normalDialogue:
-  - text: 'bumboclart
-
-'
+  monsterName: Crash
+  normalVisual: {fileID: 21300000, guid: a156d33ae56257c49bec1f2c95f2b61a, type: 3}
+  reactionVisuals:
+  - {fileID: 21300000, guid: 8002a6a8c898d2d4384904497f25e52f, type: 3}
+  - {fileID: 21300000, guid: 48e9888d378b09942b2806d23ca6bb51, type: 3}
+  dialogue:
+  - text: 'HI OH MY GOD IT''S SO NICE TO MEET YOU, IM CRASH '
     responses:
-    - text: hello
-      tone: 
-      nextLine: 0
-      requiresCharge: 1
-    isTell: 0
-  imposterDialogue:
-  - text: Hi (Evil)
-    responses:
-    - text: 'hello '
+    - text: Nice to meet you, excited much?
       tone: 
       nextLine: 1
-      requiresCharge: 1
-    - text: '*kills you*'
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: Are you alright??
       tone: 
       nextLine: 1
-      requiresCharge: 1
-    - text: '*leans in for a kiss*'
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: 'Woah bud... Hold them horses '
       tone: 
-      nextLine: 0
-      requiresCharge: 1
-    - text: So... the weather eh?
+      nextLine: 1
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: Whats with this energy?
       tone: 
-      nextLine: 0
-      requiresCharge: 1
-    isTell: 0
-  - text: how are you? Im just up to some, monkey business AHHAHH
+      nextLine: 1
+      imposterNextLine: 0
+      requiresCharge: 0
+    visualIndex: -1
+  - text: I CANT HELP IT, WORKPLACE INJURY, LEFT ME SPEAKING IN CAPS THE WHOLE TIME
     responses:
-    - text: well im feeling pretty funky
+    - text: oh no, how did that happen? No... nevermind, i dont care
       tone: 
       nextLine: 2
+      imposterNextLine: 0
       requiresCharge: 0
-    - text: h
+    - text: sorry you're going to have to speak up a little, it's hard to hear you
       tone: 
-      nextLine: 0
+      nextLine: 2
+      imposterNextLine: 0
       requiresCharge: 0
-    - text: b
+    - text: should have been more careful then shouldn't you?
       tone: 
-      nextLine: 1
+      nextLine: 2
+      imposterNextLine: 0
       requiresCharge: 0
-    - text: c
+    - text: must be a pretty poor worker then...
       tone: 
-      nextLine: 0
+      nextLine: 2
+      imposterNextLine: 0
       requiresCharge: 0
-    isTell: 0
-  - text: Line 3
+    visualIndex: -1
+  - text: ....
     responses:
-    - text: well im feeling pretty funky
+    - text: anyway, you like cars right?
       tone: 
-      nextLine: 0
-      requiresCharge: 0
-    - text: '*kills you*'
+      nextLine: 3
+      imposterNextLine: 5
+      requiresCharge: 1
+    - text: okay okay my bad... the  weather eh?
       tone: 
-      nextLine: 0
+      nextLine: 4
+      imposterNextLine: 0
       requiresCharge: 0
-    - text: '*leans in for a kiss*'
+    - text: well how about you tell me about yourself?
       tone: 
-      nextLine: 0
+      nextLine: 4
+      imposterNextLine: 0
       requiresCharge: 0
-    - text: So... the weather eh?
+    - text: whats the best car you've been in crash?
       tone: 
-      nextLine: 0
+      nextLine: 3
+      imposterNextLine: 5
+      requiresCharge: 1
+    visualIndex: 1
+  - text: 'OH YES CARS I LOVE CARS, I LOVE MY RELIANT ROBIN '
+    responses:
+    - text: 
+      tone: 
+      nextLine: 3
+      imposterNextLine: 4
+      requiresCharge: 1
+    - text: okay okay my bad... the  weather eh?
+      tone: 
+      nextLine: 3
+      imposterNextLine: 0
       requiresCharge: 0
-    isTell: 0
-  likes: Being nice
-  dislikes: Being evil
-  lookDescription: nice (not evil)
+    - text: well how about you tell me about yourself?
+      tone: 
+      nextLine: 3
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: whats the best car you've been in crash?
+      tone: 
+      nextLine: 3
+      imposterNextLine: 4
+      requiresCharge: 1
+    visualIndex: 1
+  dayStartLine: 000000000000000000000000
+  likes: Cars, Going fast, Yellow
+  dislikes: Caution, Brick Walls, the grinch
+  lookDescription: Yellow, Chisled

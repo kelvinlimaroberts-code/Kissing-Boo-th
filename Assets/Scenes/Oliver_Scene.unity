@@ -15051,6 +15051,7 @@ MonoBehaviour:
   bubble: {fileID: 1151657676}
   responseMenu: {fileID: 612117777}
   monsterVisual: {fileID: 57757282}
+  roundManager: {fileID: 2093800815}
 --- !u!4 &1191270308
 Transform:
   m_ObjectHideFlags: 0
@@ -26921,6 +26922,7 @@ MonoBehaviour:
   voteScreen: {fileID: 1021891195}
   nightTransition: {fileID: 1847509974}
   chargeManager: {fileID: 1079557172}
+  wrapUpSeconds: 8
 --- !u!4 &2093800816
 Transform:
   m_ObjectHideFlags: 0
