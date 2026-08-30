@@ -6,6 +6,7 @@ public class MonsterData : ScriptableObject
     public string monsterName;
     public Sprite normalVisual;
     public Sprite imposterVisual;
+    public Sprite currentEmotion;
     public Dialogue[] dialogue;
     [TextArea] public string likes;
     [TextArea] public string dislikes;

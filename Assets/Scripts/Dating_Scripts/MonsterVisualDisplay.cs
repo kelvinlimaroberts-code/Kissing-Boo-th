@@ -15,4 +15,9 @@ public class MonsterVisualDisplay : MonoBehaviour
     {
         spriteRenderer.sprite = isTell ? currentData.imposterVisual : currentData.normalVisual;
     }
+
+    public void UpdateMonsterSprite(MonsterData data)
+    {
+        spriteRenderer.sprite = data.currentEmotion;
+    }
 }
