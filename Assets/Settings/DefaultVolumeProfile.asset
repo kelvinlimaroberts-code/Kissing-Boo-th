@@ -341,16 +341,16 @@ MonoBehaviour:
     m_Value: 2
   DitherPattern:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   DitherPixelPerfect:
     m_OverrideState: 1
     m_Value: 0
   DitherScale:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.238
   DitherThreshold:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 1
   EnableColorPalette:
     m_OverrideState: 1
     m_Value: 0

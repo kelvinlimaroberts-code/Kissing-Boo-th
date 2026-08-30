@@ -73,23 +73,23 @@ MonoBehaviour:
     responses:
     - text: well im sure thats safe, at least you're not seriously hurt
       tone: 
-      nextLine: 0
-      imposterNextLine: 0
+      nextLine: 4
+      imposterNextLine: 4
       requiresCharge: 0
     - text: well im sure thats safe, at least you're not seriously hurt
       tone: 
-      nextLine: 0
-      imposterNextLine: 0
+      nextLine: 4
+      imposterNextLine: 4
       requiresCharge: 0
     - text: well im sure thats safe, at least you're not seriously hurt
       tone: 
-      nextLine: 0
-      imposterNextLine: 0
+      nextLine: 4
+      imposterNextLine: 4
       requiresCharge: 0
     - text: well im sure thats safe, at least you're not seriously hurt
       tone: 
-      nextLine: 0
-      imposterNextLine: 0
+      nextLine: 4
+      imposterNextLine: 4
       requiresCharge: 0
   - text: IT'S FINE, I LANDED INTO A BRICK WALL WHICH SAVED ME FROM BIG INJURIES
     voiceLine: {fileID: 0}
@@ -97,25 +97,58 @@ MonoBehaviour:
     responses:
     - text: well im sure thats safe, at least you're not seriously hurt
       tone: 
-      nextLine: 0
-      imposterNextLine: 0
+      nextLine: 4
+      imposterNextLine: 4
       requiresCharge: 0
     - text: well im sure thats safe, at least you're not seriously hurt
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+    - text: well im sure thats safe, at least you're not seriously hurt
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+    - text: well im sure thats safe, at least you're not seriously hurt
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+  - text: IT SEEMS OUR TIME IS UP FOR TONIGHT, ILL SEE YOU TOMORROW
+    voiceLine: {fileID: 0}
+    currentEmotion: {fileID: 0}
+    responses: []
+  - text: IT SEEMS OUR TIME IS UP FOR TONIGHT, ILL SEE YOU TOMORROW
+    voiceLine: {fileID: 0}
+    currentEmotion: {fileID: 0}
+    responses:
+    - text: 
+      tone: 
+      nextLine: 6
+      imposterNextLine: 6
+      requiresCharge: 0
+    - text: 
       tone: 
       nextLine: 0
       imposterNextLine: 0
       requiresCharge: 0
-    - text: well im sure thats safe, at least you're not seriously hurt
+    - text: 
       tone: 
       nextLine: 0
       imposterNextLine: 0
       requiresCharge: 0
-    - text: well im sure thats safe, at least you're not seriously hurt
+    - text: 
       tone: 
       nextLine: 0
       imposterNextLine: 0
       requiresCharge: 0
-  dayStartLine: 000000000000000000000000
+  dayStartLine: 000000000500000000000000
   likes: Going fast, driving cars, getting drunk
   dislikes: brick walls, the colour green, ham
-  lookDescription: charming, yellow
+  lookDescription: 'Likes: Going fast, driving cars, getting drunk
+
+    Dislikes:
+    brick walls, the colour green, ham
+
+    charming, yellow'
