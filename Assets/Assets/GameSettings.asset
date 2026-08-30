@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: Assembly-CSharp::GameSettings
   monstersPerRun: 3
-  dateTimerSeconds: 10
+  dateTimerSeconds: 35
+  chargesPerNight: 3

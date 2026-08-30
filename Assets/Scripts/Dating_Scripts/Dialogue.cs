@@ -7,5 +7,5 @@ public class Dialogue
     public AudioClip voiceLine;
     public Sprite currentEmotion;
     public PlayerResponse[] responses;
-    public bool isTell;
+
 }

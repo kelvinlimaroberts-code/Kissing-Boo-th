@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class RoundManager : MonoBehaviour
@@ -14,6 +15,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private NightTransition nightTransition;
     [SerializeField] private ChargeManager chargeManager;
     [SerializeField] private float wrapUpSeconds = 8f;
+    [SerializeField] private TMP_Text timerText;
 
     private List<MonsterData> selectedDates;
     private MonsterData imposter;
@@ -65,6 +67,8 @@ public class RoundManager : MonoBehaviour
         if (!roundActive) return;
 
         timer -= Time.deltaTime;
+        timerText.text = Mathf.CeilToInt(Mathf.Max(0f, timer)).ToString();
+
         if (timer <= 0f)
         {
             NextDate();

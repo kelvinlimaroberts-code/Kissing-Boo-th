@@ -15,74 +15,9 @@ MonoBehaviour:
   monsterName: MST2
   normalVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
   imposterVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  normalDialogue:
-  - text: 'bumboclart
-
-'
-    responses:
-    - text: hello
-      tone: 
-      nextLine: 0
-      requiresCharge: 1
-    isTell: 0
-  imposterDialogue:
-  - text: Hi (Evil)
-    responses:
-    - text: 'hello '
-      tone: 
-      nextLine: 1
-      requiresCharge: 1
-    - text: '*kills you*'
-      tone: 
-      nextLine: 1
-      requiresCharge: 1
-    - text: '*leans in for a kiss*'
-      tone: 
-      nextLine: 0
-      requiresCharge: 1
-    - text: So... the weather eh?
-      tone: 
-      nextLine: 0
-      requiresCharge: 1
-    isTell: 0
-  - text: how are you? Im just up to some, monkey business AHHAHH
-    responses:
-    - text: well im feeling pretty funky
-      tone: 
-      nextLine: 2
-      requiresCharge: 0
-    - text: h
-      tone: 
-      nextLine: 0
-      requiresCharge: 0
-    - text: b
-      tone: 
-      nextLine: 1
-      requiresCharge: 0
-    - text: c
-      tone: 
-      nextLine: 0
-      requiresCharge: 0
-    isTell: 0
-  - text: Line 3
-    responses:
-    - text: well im feeling pretty funky
-      tone: 
-      nextLine: 0
-      requiresCharge: 0
-    - text: '*kills you*'
-      tone: 
-      nextLine: 0
-      requiresCharge: 0
-    - text: '*leans in for a kiss*'
-      tone: 
-      nextLine: 0
-      requiresCharge: 0
-    - text: So... the weather eh?
-      tone: 
-      nextLine: 0
-      requiresCharge: 0
-    isTell: 0
+  currentEmotion: {fileID: 0}
+  dialogue: []
+  dayStartLine: ffffffffffffffffffffffff
   likes: Being nice
   dislikes: Being evil
   lookDescription: nice (not evil)
