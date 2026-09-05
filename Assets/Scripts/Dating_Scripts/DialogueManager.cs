@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private ResponseMenuUI responseMenu;
     [SerializeField] private MonsterVisualDisplay monsterVisual;
     [SerializeField] private RoundManager roundManager;
+    [SerializeField] private SoundManager soundManager;
 
     private Dialogue[] activeLines;
     private int lineIndex;
@@ -47,6 +48,10 @@ public class DialogueManager : MonoBehaviour
         Dialogue line = activeLines[lineIndex];
         bubble.Show(line.text);
         monsterVisual.UpdateMonsterSprite(line);
+        if (line.voiceLine != null)
+        {
+            soundManager.PlaySFX(line.voiceLine);
+        }
 
         if (line.responses != null && line.responses.Length > 0)
         {
