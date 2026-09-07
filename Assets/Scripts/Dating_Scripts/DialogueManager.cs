@@ -46,6 +46,10 @@ public class DialogueManager : MonoBehaviour
     private void ShowCurrentLine()
     {
         Dialogue line = activeLines[lineIndex];
+        //if (line == null)
+        //{
+        //    return;
+        //}
         bubble.Show(line.text);
         monsterVisual.UpdateMonsterSprite(line);
         if (line.voiceLine != null)

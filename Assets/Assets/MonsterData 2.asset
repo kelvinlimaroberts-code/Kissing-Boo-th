@@ -12,12 +12,300 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed578f32027040438386761b7396a3d, type: 3}
   m_Name: MonsterData 2
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
-  monsterName: MST3
-  normalVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  imposterVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  currentEmotion: {fileID: 0}
-  dialogue: []
-  dayStartLine: ffffffffffffffffffffffff
-  likes: Being nice
-  dislikes: Being evil
-  lookDescription: nice (not evil)
+  monsterName: Zurkle
+  normalVisual: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+  imposterVisual: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+  currentEmotion: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+  dialogue:
+  - text: Yes, my man. How are ya doin bruv?
+    voiceLine: {fileID: 8300000, guid: 89a0835863c685743b139e512f18dbf2, type: 3}
+    currentEmotion: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+    responses:
+    - text: 'Hey, Im doing good. And you? '
+      tone: 
+      nextLine: 1
+      imposterNextLine: 1
+      requiresCharge: 0
+    - text: That's not really a romantic greeting
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+    - text: Good Enough. I get by, and yourself?
+      tone: 
+      nextLine: 1
+      imposterNextLine: 1
+      requiresCharge: 0
+    - text: Shite mate, it's so over
+      tone: 
+      nextLine: 3
+      imposterNextLine: 3
+      requiresCharge: 0
+  - text: Yeah not too bad myself. We keep it hangin and swangin loose.
+    voiceLine: {fileID: 8300000, guid: 85f1dfc9301672c40a1346d5a9308266, type: 3}
+    currentEmotion: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+    responses:
+    - text: How are you finding the food?
+      tone: 
+      nextLine: 2
+      imposterNextLine: 13
+      requiresCharge: 0
+    - text: I lied. It's all gone to shit.
+      tone: 
+      nextLine: 3
+      imposterNextLine: 3
+      requiresCharge: 0
+    - text: Can I see what else of yours is hangin and swangin?
+      tone: 
+      nextLine: 5
+      imposterNextLine: 14
+      requiresCharge: 1
+  - text: I can't be eating it mate. Been stuck on an o natural brains diet since
+      the whole death thing.
+    voiceLine: {fileID: 8300000, guid: 22185758412ed9a4b863b8d49d0aeae4, type: 3}
+    currentEmotion: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+    responses:
+    - text: Damn shame. I love me a burger.
+      tone: 
+      nextLine: 6
+      imposterNextLine: 6
+      requiresCharge: 0
+    - text: And how did that ordeal occurr?
+      tone: 
+      nextLine: 7
+      imposterNextLine: 15
+      requiresCharge: 1
+    - text: Can you at least have a drink?
+      tone: 
+      nextLine: 8
+      imposterNextLine: 8
+      requiresCharge: 0
+  - text: Shit that sucks. The way of the wolrd. Always tryna put you down.
+    voiceLine: {fileID: 8300000, guid: ced9eb0d9ab1e63498d4de77f944fb09, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 6b83ef50ede27084b9d2afa166b80fd4, type: 3}
+    responses:
+    - text: How are you finding the food anyway?
+      tone: 
+      nextLine: 2
+      imposterNextLine: 13
+      requiresCharge: 0
+    - text: You can pin me down if you want.
+      tone: 
+      nextLine: 5
+      imposterNextLine: 14
+      requiresCharge: 0
+    - text: There's always something going wrong isn't there?
+      tone: 
+      nextLine: 9
+      imposterNextLine: 9
+      requiresCharge: 0
+  - text: At least I'm not as rude as that response buddy.
+    voiceLine: {fileID: 8300000, guid: fbb86389fc974094fa75c6ff0ca43024, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 6b83ef50ede27084b9d2afa166b80fd4, type: 3}
+    responses:
+    - text: My Appolocheese. Let me start over.
+      tone: 
+      nextLine: 0
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: Whatever, do you at least enjoy the food?
+      tone: 
+      nextLine: 2
+      imposterNextLine: 13
+      requiresCharge: 0
+    - text: I can get ruder if you're not careful
+      tone: 
+      nextLine: 10
+      imposterNextLine: 16
+      requiresCharge: 1
+  - text: How vulgar you are. Be careful what you wish for, or it might just come
+      true.
+    voiceLine: {fileID: 8300000, guid: 0dfeba644a3df6b4ab381482202cb73f, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 5df80fa1baa9c334791b2d9b28e09b2f, type: 3}
+    responses:
+    - text: And what if i do so wish this?
+      tone: 
+      nextLine: 11
+      imposterNextLine: 11
+      requiresCharge: 0
+    - text: Yeah sorry I need to keep it in my pants. Let me start over.
+      tone: 
+      nextLine: 0
+      imposterNextLine: 0
+      requiresCharge: 0
+  - text: Alright, rub it in why don't ya?
+    voiceLine: {fileID: 8300000, guid: e6978df390815724285f1cd973f700bc, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 6b83ef50ede27084b9d2afa166b80fd4, type: 3}
+    responses:
+    - text: Yeah wait pretend I asked that again
+      tone: 
+      nextLine: 2
+      imposterNextLine: 13
+      requiresCharge: 0
+    - text: Maybe I'll rub my IT inside of you
+      tone: 
+      nextLine: 5
+      imposterNextLine: 14
+      requiresCharge: 1
+  - text: I fought the law, and well... the law won.
+    voiceLine: {fileID: 8300000, guid: 8935534b6bd4003458499ce205063402, type: 3}
+    currentEmotion: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+    responses:
+    - text: I won't intrude
+      tone: 
+      nextLine: 12
+      imposterNextLine: 12
+      requiresCharge: 0
+    - text: You must have lacked more wit than your enemies clearly.
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+  - text: Maybe I can take you out for a drink if you'd let me?
+    voiceLine: {fileID: 8300000, guid: f147c612297648045b1d6e67b64737cf, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 8f4baf44edeec1345b6e15438100e61d, type: 3}
+    responses:
+    - text: Yeah go on. We can get some action after
+      tone: 
+      nextLine: 5
+      imposterNextLine: 14
+      requiresCharge: 1
+    - text: You think you have earned another date with me already? You're dim.
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+  - text: 'Endless troubles in the nation. This is why we need a revolution. '
+    voiceLine: {fileID: 8300000, guid: 1eb23e4db381a904db38b25e0c6fac1f, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 6b83ef50ede27084b9d2afa166b80fd4, type: 3}
+    responses:
+    - text: How are you finding the food anyway?
+      tone: 
+      nextLine: 2
+      imposterNextLine: 13
+      requiresCharge: 0
+    - text: You're starting a revolution in my trouser.
+      tone: 
+      nextLine: 5
+      imposterNextLine: 14
+      requiresCharge: 0
+    - text: I could go on and on with all these problems i have.
+      tone: 
+      nextLine: 3
+      imposterNextLine: 3
+      requiresCharge: 0
+  - text: Feisty one here. I like someone with that kind of passion.
+    voiceLine: {fileID: 8300000, guid: ea9241d8e7a1c3f46908159fd9cec8b7, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 8f4baf44edeec1345b6e15438100e61d, type: 3}
+    responses:
+    - text: Well I don't like you. You are a buffoon.
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+    - text: I can keep it up, if you can handle me.
+      tone: 
+      nextLine: 5
+      imposterNextLine: 14
+      requiresCharge: 1
+  - text: I may be a zombie, but I can act like a genie for a night then
+    voiceLine: {fileID: 8300000, guid: 137f4f318a6a7bd4baa31986878f33bd, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 8f4baf44edeec1345b6e15438100e61d, type: 3}
+    responses:
+    - text: Maybe we better hold the horses
+      tone: 
+      nextLine: 12
+      imposterNextLine: 12
+      requiresCharge: 0
+    - text: I'm gonna rub your lamp
+      tone: 
+      nextLine: 5
+      imposterNextLine: 14
+      requiresCharge: 1
+    - text: Like you have a chance for a night with me
+      tone: 
+      nextLine: 10
+      imposterNextLine: 16
+      requiresCharge: 1
+  - text: It's alright. we all get ahead of ourselves sometimes.
+    voiceLine: {fileID: 8300000, guid: 5296f665ef5e4bb408674371fe42b39c, type: 3}
+    currentEmotion: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+    responses:
+    - text: Let's start over then
+      tone: 
+      nextLine: 0
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: I had a troubled past.
+      tone: 
+      nextLine: 3
+      imposterNextLine: 3
+      requiresCharge: 0
+  - text: I'm a hungry man but I don't want burger
+    voiceLine: {fileID: 8300000, guid: 325c0d02979d5104eba10486115f32bb, type: 3}
+    currentEmotion: {fileID: 21300000, guid: e7b6db66fd3f98e45be79efc07a49a6e, type: 3}
+    responses:
+    - text: Damn shame. I love me a burger
+      tone: 
+      nextLine: 6
+      imposterNextLine: 6
+      requiresCharge: 0
+    - text: Well what do you want?
+      tone: 
+      nextLine: 15
+      imposterNextLine: 15
+      requiresCharge: 1
+    - text: Do you at least like to drink?
+      tone: 
+      nextLine: 8
+      imposterNextLine: 8
+      requiresCharge: 0
+  - text: Vulgar and explicit. Why don't you feed my frankenstein?
+    voiceLine: {fileID: 8300000, guid: e5d70a1dd7644634f98bb948a686be57, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 8f4baf44edeec1345b6e15438100e61d, type: 3}
+    responses:
+    - text: I think I wish for this
+      tone: 
+      nextLine: 11
+      imposterNextLine: 11
+      requiresCharge: 0
+    - text: Oh yeah the food. Do you like it?
+      tone: 
+      nextLine: 2
+      imposterNextLine: 13
+      requiresCharge: 0
+  - text: You look pretty delicious yourself.
+    voiceLine: {fileID: 8300000, guid: 448a944de40c87341a078fb4bfab8286, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 8f4baf44edeec1345b6e15438100e61d, type: 3}
+    responses:
+    - text: Hold your horse(s). You are perv.
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+    - text: You can eat a little from my...
+      tone: 
+      nextLine: 14
+      imposterNextLine: 14
+      requiresCharge: 1
+  - text: Rude tease you are love
+    voiceLine: {fileID: 8300000, guid: 5ac0d524fc54d0041a991fdc93b84bb2, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 6b83ef50ede27084b9d2afa166b80fd4, type: 3}
+    responses:
+    - text: Rude boy you are buster
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 0
+    - text: The tease is part of the foreplay
+      tone: 
+      nextLine: 14
+      imposterNextLine: 14
+      requiresCharge: 1
+  dayStartLine: 000000000000000000000000
+  likes: playing shows, antagonising facists, pub
+  dislikes: AM, PM, labels, consistncy
+  lookDescription: 'Likes: playing shows, antagonising facists, pub
+
+    Dislikes:
+    AM, PM, labels, consistency'
