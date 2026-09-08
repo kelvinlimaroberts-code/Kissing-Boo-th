@@ -12,12 +12,334 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed578f32027040438386761b7396a3d, type: 3}
   m_Name: MonsterData 1
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
-  monsterName: MST2
-  normalVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  imposterVisual: {fileID: 21300000, guid: 8739d72660524c044860d33371c07619, type: 3}
-  currentEmotion: {fileID: 0}
-  dialogue: []
+  monsterName: Pafluence
+  normalVisual: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+  imposterVisual: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+  currentEmotion: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+  dialogue:
+  - text: I am pafluence. Wash my bellayyy
+    voiceLine: {fileID: 8300000, guid: 165890d27caad5041ad272254d12a95e, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+    responses:
+    - text: What?? Hello?
+      tone: 
+      nextLine: 1
+      imposterNextLine: 1
+      requiresCharge: 0
+    - text: You move fast. I like it.
+      tone: 
+      nextLine: 2
+      imposterNextLine: 2
+      requiresCharge: 0
+    - text: What kind of soap?
+      tone: 
+      nextLine: 3
+      imposterNextLine: 3
+      requiresCharge: 0
+  - text: It's that time of the moon. I deserve to be pet.
+    voiceLine: {fileID: 8300000, guid: 0765cbb2a006a6e4daf66698b8117c59, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+    responses:
+    - text: Is that why you are here?
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 1
+    - text: At least let me introduce myself
+      tone: 
+      nextLine: 5
+      imposterNextLine: 5
+      requiresCharge: 0
+    - text: Now this looks like a job for me
+      tone: 
+      nextLine: 6
+      imposterNextLine: 6
+      requiresCharge: 0
+  - text: And you know how to keep up.
+    voiceLine: {fileID: 8300000, guid: 444727b0831c1fb4db79da96b254e824, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: You know it
+      tone: 
+      nextLine: 5
+      imposterNextLine: 5
+      requiresCharge: 0
+    - text: Maybe I don't
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+  - text: I don't care as long as I feel a scratch behind the ear.
+    voiceLine: {fileID: 8300000, guid: 8159176feba3e2a4aa6d4a9771485450, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: I can pet you all over
+      tone: 
+      nextLine: 9
+      imposterNextLine: 9
+      requiresCharge: 0
+    - text: Nah sounds like effort
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+  - text: My pack didn't know how to satify my needs. I need someone who can.
+    voiceLine: {fileID: 8300000, guid: 151de61d72de66d438b687f8141bec04, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+    responses:
+    - text: Pack was lackin' eh?
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: I volunteer as tribute
+      tone: 
+      nextLine: 6
+      imposterNextLine: 6
+      requiresCharge: 0
+    - text: Speed dating helps with the hunt
+      tone: 
+      nextLine: 10
+      imposterNextLine: 10
+      requiresCharge: 1
+  - text: What's your name then honey?
+    voiceLine: {fileID: 8300000, guid: 869233d61b23c3c449c754c20c25e14b, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+    responses:
+    - text: The globgogabgalab
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: Wouldn't you like to know
+      tone: 
+      nextLine: 8
+      imposterNextLine: 8
+      requiresCharge: 0
+    - text: You can call me... anytime.
+      tone: 
+      nextLine: 9
+      imposterNextLine: 9
+      requiresCharge: 0
+  - text: If you sign yourself up, we can go have some fun later.
+    voiceLine: {fileID: 8300000, guid: f6da23aa23e37c141a8334367dd2ab6d, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: Fetch?
+      tone: 
+      nextLine: 11
+      imposterNextLine: 11
+      requiresCharge: 0
+    - text: Human Hunt?
+      tone: 
+      nextLine: 10
+      imposterNextLine: 14
+      requiresCharge: 1
+    - text: Rolling in pig shit?
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: I have a plan already
+      tone: 
+      nextLine: 8
+      imposterNextLine: 8
+      requiresCharge: 0
+  - text: You really know how to kill a lady's mood don't you
+    voiceLine: {fileID: 8300000, guid: 94a7bf18c9186a24abe421b707448818, type: 3}
+    currentEmotion: {fileID: 21300000, guid: cac781bfb76b4554d91b78cd3b367b90, type: 3}
+    responses:
+    - text: I try my best to
+      tone: 
+      nextLine: 13
+      imposterNextLine: 16
+      requiresCharge: 0
+    - text: Let me get a do over
+      tone: 
+      nextLine: 0
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: Let me pet you to make it up
+      tone: 
+      nextLine: 3
+      imposterNextLine: 3
+      requiresCharge: 0
+  - text: Oh the mystery. My curiosity is peaked.
+    voiceLine: {fileID: 8300000, guid: 01e99be216e8b1f4c9c87ccf3ed58e14, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: That killed the cat you know?
+      tone: 
+      nextLine: 12
+      imposterNextLine: 15
+      requiresCharge: 1
+    - text: We must meet again then.
+      tone: 
+      nextLine: 9
+      imposterNextLine: 9
+      requiresCharge: 0
+    - text: Calm down love
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+  - text: Awough. You know how to get a lady going
+    voiceLine: {fileID: 8300000, guid: 7599621f7e0a7e3418375a478f28b174, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: I can all night long
+      tone: 
+      nextLine: 2
+      imposterNextLine: 2
+      requiresCharge: 0
+    - text: How do I get her stopping?
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: Is this what you were looking for tonight?
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 1
+  - text: I love to hunt. It's all part of the fun
+    voiceLine: {fileID: 8300000, guid: e07ac8b2abdf4b141a176e612478c8f3, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: Me too! I've hunted before
+      tone: 
+      nextLine: 2
+      imposterNextLine: 2
+      requiresCharge: 0
+    - text: I've already found my catch
+      tone: 
+      nextLine: 9
+      imposterNextLine: 9
+      requiresCharge: 0
+    - text: I hate fun
+      tone: 
+      nextLine: 13
+      imposterNextLine: 16
+      requiresCharge: 1
+  - text: Not what I had in mind, but we can have such fun with that too.
+    voiceLine: {fileID: 8300000, guid: e875e1aa418f83640a08c5a6c9f5a148, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 3b21eb422bda28441b6a1a314feb40ac, type: 3}
+    responses:
+    - text: We can have fun in the bath too.
+      tone: 
+      nextLine: 0
+      imposterNextLine: 0
+      requiresCharge: 0
+    - text: Searching for fun are you?
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 1
+    - text: Well I can't think of anything more boring
+      tone: 
+      nextLine: 13
+      imposterNextLine: 16
+      requiresCharge: 1
+  - text: I love to chase a cat. I can't contain myself sometimes.
+    voiceLine: {fileID: 8300000, guid: d17365c45258d124cab9e6863d6d73d9, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: More than one way to skin
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: Let's go on a hunt then
+      tone: 
+      nextLine: 10
+      imposterNextLine: 14
+      requiresCharge: 1
+    - text: Snooze fest
+      tone: 
+      nextLine: 13
+      imposterNextLine: 16
+      requiresCharge: 1
+  - text: What a drain. When is the switch happening?
+    voiceLine: {fileID: 8300000, guid: 8f5b8894955cc0b45a8156b008b7641f, type: 3}
+    currentEmotion: {fileID: 21300000, guid: cac781bfb76b4554d91b78cd3b367b90, type: 3}
+    responses:
+    - text: Hopefully soon...
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: Allow me to reintroduce myself
+      tone: 
+      nextLine: 5
+      imposterNextLine: 5
+      requiresCharge: 0
+    - text: Let me get a restart
+      tone: 
+      nextLine: 0
+      imposterNextLine: 0
+      requiresCharge: 0
+  - text: I could hunt anyone right now. QC, Humans... Their flesh and bones need
+      to be eaten
+    voiceLine: {fileID: 8300000, guid: 6af7827e7d558bb43a9677713612c54d, type: 3}
+    currentEmotion: {fileID: 21300000, guid: 31eb9d12a009bf44da44a11075f1a5a4, type: 3}
+    responses:
+    - text: Gnaw on my bone?
+      tone: 
+      nextLine: 9
+      imposterNextLine: 9
+      requiresCharge: 1
+    - text: Who is QC again?
+      tone: 
+      nextLine: 15
+      imposterNextLine: 15
+      requiresCharge: 1
+    - text: Boringggg
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+  - text: The Cougar Queen is one cat I need to be rid of.
+    voiceLine: {fileID: 8300000, guid: 12885f52559398c45a4545ff8482654a, type: 3}
+    currentEmotion: {fileID: 21300000, guid: cac781bfb76b4554d91b78cd3b367b90, type: 3}
+    responses:
+    - text: More than one way to skin
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: Let's hunt her down then
+      tone: 
+      nextLine: 10
+      imposterNextLine: 14
+      requiresCharge: 1
+    - text: blah blah blah
+      tone: 
+      nextLine: 13
+      imposterNextLine: 16
+      requiresCharge: 1
+  - text: Just like my previous pack. Get out of here before I get rid of you.
+    voiceLine: {fileID: 8300000, guid: 8e410e29e61fd784c8869c2ccb0486d1, type: 3}
+    currentEmotion: {fileID: 21300000, guid: cac781bfb76b4554d91b78cd3b367b90, type: 3}
+    responses:
+    - text: What happened to your previous pack?
+      tone: 
+      nextLine: 4
+      imposterNextLine: 4
+      requiresCharge: 1
+    - text: Get out of here yourself
+      tone: 
+      nextLine: 7
+      imposterNextLine: 7
+      requiresCharge: 0
+    - text: Appologies m'lady. Let me reintroduce myself.
+      tone: 
+      nextLine: 5
+      imposterNextLine: 5
+      requiresCharge: 0
   dayStartLine: ffffffffffffffffffffffff
-  likes: Being nice
-  dislikes: Being evil
-  lookDescription: nice (not evil)
+  likes: Attention, Scratches, Playing, Sleeping
+  dislikes: Being Ignored, Cages
+  lookDescription: ' Likes: Attention, Scratches, Playing, Sleeping
+
+    Dislikes:
+    Being Ignored, Cages'
